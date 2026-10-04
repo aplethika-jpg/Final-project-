@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Eye Activity Machine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Eye Activity Machine</h1>
+<p class="subtitle">Smart Eye Activity & Blink Monitoring</p>
+<div class="camera-box">
+<video id="video" autoplay playsinline muted></video>
+<div id="status">Camera not started</div>
+</div>
+<div class="buttons">
+<button id="startBtn">Start Camera</button>
+<button id="stopBtn" disabled>Stop Camera</button>
+</div>
+<div class="dashboard">
+<div class="card"><h3>Eye Status</h3><p id="eyeStatus">Waiting...</p></div>
+<div class="card"><h3>Blink Count</h3><p id="blinkCount">0</p></div>
+<div class="card"><h3>Session</h3><p id="sessionTime">00:00</p></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
