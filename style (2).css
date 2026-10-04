@@ -1,0 +1,14 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#10172a,#172554,#312e81);min-height:100vh;color:white;padding:25px}
+.container{max-width:900px;margin:auto;text-align:center}
+h1{font-size:38px;margin-top:10px}.subtitle{margin:10px 0 25px;color:#c7d2fe}
+.camera-box{position:relative;width:100%;max-width:720px;margin:auto;background:#050816;border-radius:20px;overflow:hidden;border:2px solid #6366f1}
+video{display:block;width:100%;min-height:360px;object-fit:cover;transform:scaleX(-1)}
+#status{position:absolute;left:15px;top:15px;background:rgba(0,0,0,.65);padding:10px 15px;border-radius:20px}
+.buttons{margin:22px 0}button{border:0;padding:13px 22px;margin:5px;border-radius:10px;cursor:pointer;font-weight:bold}
+#startBtn{background:#22c55e;color:white}#stopBtn{background:#ef4444;color:white}
+button:disabled{opacity:.45;cursor:not-allowed}
+.dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:15px;padding:20px}
+.card h3{color:#c7d2fe;margin-bottom:12px}.card p{font-size:25px;font-weight:bold}
+@media(max-width:650px){h1{font-size:30px}.dashboard{grid-template-columns:1fr}video{min-height:250px}}
